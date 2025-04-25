@@ -21,7 +21,9 @@ form {
     display: inline-block;
     text-align: left;
     background-color: #fff;
-    padding: 20px;
+    width: 75px; /* Set width to 75px */
+    height: 75px; /* Set height to 75px */
+    padding: 10px; /* Optional for internal spacing */
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
