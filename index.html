@@ -3,29 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Login - AATech</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login Portal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>AATech Customer Login</h1>
-    </header>
-    <main>
+    <div class="login-container">
+        <h2>Login</h2>
         <form id="loginForm">
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <br>
+            <input type="text" id="username" required>
+            
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
+            <input type="password" id="password" required>
+            
             <button type="submit">Login</button>
         </form>
-        <p id="errorMessage" class="error"></p>
-    </main>
-    <footer>
-        <hr>
-        <p>&copy; AATech 2025. All rights reserved to AATech.</p>
-    </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
