@@ -13,6 +13,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     } else if (username === customerCredentials.username && password === customerCredentials.password) {
         window.location.href = "customer_portal.html";  // Redirect to customer portal
     } else {
-        alert("Invalid credentials!");
+        alert("Incorrect Username or Password. please try again!.
+            if you have forgotten your Username or Password please contact your MSP!");
     }
 });
