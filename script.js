@@ -1,24 +1,18 @@
-// Sample accounts for login
-const accounts = [
-    { username: "customer1", password: "password123" },
-    { username: "customer2", password: "mypassword456" }
-];
-
-// Handle login form submission
-document.getElementById("loginForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form from submitting traditionally
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    // Check credentials
-    const user = accounts.find(account => account.username === username && account.password === password);
+    // Simulated credentials (replace with server-side validation)
+    const adminCredentials = { username: "admin", password: "admin123" };
+    const customerCredentials = { username: "customer", password: "cust123" };
 
-    if (user) {
-        alert("Login successful!");
-        window.location.href = "https://redirected-site.com"; // Redirect to another site
+    if (username === adminCredentials.username && password === adminCredentials.password) {
+        window.location.href = "admin_portal.html";  // Redirect to admin portal
+    } else if (username === customerCredentials.username && password === customerCredentials.password) {
+        window.location.href = "customer_portal.html";  // Redirect to customer portal
     } else {
-        const errorMessage = document.getElementById("errorMessage");
-        errorMessage.textContent = "Invalid username or password. Please try again.";
+        alert("Invalid credentials!");
     }
 });
